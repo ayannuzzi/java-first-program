@@ -14,8 +14,8 @@ public class MortgageCalculator {
         this.annualRate = annualRate;
     }
 
-    int getNumberOfPayments(){
-        return 0;
+    private int getNumberOfPayments() {
+        return termInYears * 12;
     }
 
     private float getMonthlyInterestRate(){
